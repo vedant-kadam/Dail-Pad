@@ -1,0 +1,249 @@
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Roboto', sans-serif; */
+
+}
+body{
+    background: rgb(30, 229, 255);
+    overflow: hidden;
+}
+.mobile{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+    width: 100%;
+    height: 100vh;
+    padding-block: 1rem;
+    /* overflow: hidden; */
+    /* margin: 0 auto; */
+   
+   
+}
+.mobile-screen{
+    height: 600px;
+    width: 280px;
+    margin: 0 auto;
+    box-shadow: 7px 5px  rgba(43, 41, 41, 1);
+    background: whitesmoke;
+    border: 3px solid  rgb(63, 63, 63);
+    border-radius: 20px;
+    padding:10px 0px;
+   
+    
+
+
+}
+/* notifiction --start */
+.notification-bar{
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    padding: 0.2rem 0.8rem;
+    border-bottom: 1px solid black;
+    /* font-weight:bold ; */
+}
+time{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+/* notification end */
+
+.contact-app{
+    padding: 0 15px 20px 15px;
+}
+
+/* toggle start */
+.toggle-option{
+    display: flex;
+    justify-content: center;
+   /* background-color: aqua;  */
+  
+    padding-block: 15px ;
+    /* gap: 1.5rem; */
+    letter-spacing: 1px;
+}
+.toggle-option>button
+{
+    background: transparent;
+    border: none;
+    font-size: 0.85rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding-inline:0.85rem ;
+    /* background-color: bisque; */
+    
+
+}
+.toggle-active{
+    color: rgb(102, 226, 0);
+}
+/* toggle end */
+
+/* search start */
+
+.contact-search-bar{
+    width: 100%;
+    background: wheat;
+    border-radius: 5px;
+    /* margin: auto; */
+}
+.contact-search-bar>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.contact-search-bar>div>input{
+    width:90%;
+    height: 25px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+.contact-search-bar>div>i{
+    padding-left: 5px  ;   
+    cursor: pointer;
+}
+/* search end */
+
+/* input start */
+.dailpad-display{
+    margin-top: 5rem;
+    width: 100%;
+    color: rgb(51, 51, 51);
+    background: wheat;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding-inilne :5px; ;
+    box-shadow: 2px 2px 2px rgb(168, 168, 168);
+
+}
+.dailpad-display>input{
+    width: 100%;
+    height: 3rem;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-left: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    color: rgb(56, 53, 53);
+    background: transparent;
+    
+    
+}
+.dailpad-display>button{
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    height: 100%;
+    padding-inline: 0.1rem;
+    
+    /* background-color: antiquewhite; */
+}
+.dailpad-display>button>i{
+    font-size: 1.25rem;
+    color: rgb(58, 58, 58);
+}
+
+/* dail pad input end */
+
+/* key pad start */
+.keypad-wrapper{
+    width: 100%;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    font-size: 0.8rem;
+    color:rgb(73, 73, 73);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+
+}
+.key{
+    width: 55px;
+    height: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 10px;
+    margin: 0 10px 10px 10px ;
+    /* background-color: rgb(224, 224, 224); */
+    /* border-radius: 50%; */
+    /* box-shadow: 1px 4px 2px 2px rgb(150, 150, 150); */
+    cursor: pointer;
+    
+    /* font-weight: 500; */
+
+
+}
+
+.no-sub{
+    font-size: 1.25rem;
+    font-weight: bold;   
+}
+
+/* end key pad */
+
+/* start funtionality */
+ .call-container{
+    display: flex;
+    
+    justify-content: center;
+    /* align-items: center; */
+    font-size: 0.8rem;
+    color:rgb(73, 73, 73);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: 0.5rem;
+    gap: 1.5rem;
+    /* background-color:aqua ; */
+ }
+ .call-button{
+     height:45px;
+     width: 80px;
+     /* background: rgba(155, 255, 24, 0.815); */
+     background: rgb(147, 252, 147);
+     border-radius: 10px;
+    padding: 0 5px;
+     display: flex;
+ 
+     justify-content: center;
+     align-items: center;
+     box-shadow: 0px 3px 2px 2px rgb(150, 150, 150);
+
+    
+ }
+ .call-button-icon{
+
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(58, 58, 58);
+    
+ }
+ .call-button-icon>i{
+     /* transform: rotateZ(20deg); */
+    font-size: 1rem;
+ }
+ .call-button-icon>span{
+     font-weight: 700;
+     font-size: 0.8rem  ;
+     padding-left: 0.5rem;
+
+     
+ }
+/* functionali */
